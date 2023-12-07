@@ -1969,21 +1969,10 @@ input, select, textarea {
 					background-color: #2DAAE4;
 				}
 
-				ul.contact li:hover a.fa-dribbble {
-					background-color: #C4376B;
-				}
-
 				ul.contact li:hover a.fa-linkedin {
 					background-color: #006599;
 				}
 
-				ul.contact li:hover a.fa-instagram {
-					background-color: #2E5E86;
-				}
-
-				ul.contact li:hover a.fa-google-plus {
-					background-color: #DA2713;
-				}
 
 			ul.contact li:active {
 				top: 0;
@@ -2478,7 +2467,6 @@ input, select, textarea {
 
 	#banner {
 		position: relative;
-		background-image: url("images/overlay.png"), url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left, top left, center center;
 		background-repeat: repeat, repeat, no-repeat;
 		background-size: auto, auto, cover;
@@ -2488,8 +2476,6 @@ input, select, textarea {
 
 		#banner .content {
 			position: relative;
-			background-color: rgba(21, 28, 23, 0.85);
-			background-image: url("images/overlay.png"), url("images/highlight.png");
 			background-position: top left, center center;
 			background-size: auto, 100% 250%;
 			background-repeat: repeat, no-repeat;
@@ -2499,7 +2485,7 @@ input, select, textarea {
 		}
 
 			#banner .content h2 {
-				color: #fff;
+				color: #000;
 				font-size: 2.75em;
 				margin: 0 0 0.5em 0;
 			}
@@ -3105,3 +3091,12 @@ input, select, textarea {
 			}
 
 	}
+
+.profile-image {
+    max-width: 27%;
+    float:inline-end;
+	height: fit-content;
+    margin-Right: 20%;
+	border-radius: 100%;
+
+}
