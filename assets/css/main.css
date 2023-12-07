@@ -2028,36 +2028,7 @@ input, select, textarea {
 					background: #b9d2ce;
 				}
 
-/* Meta */
 
-	ul.meta {
-		font-size: 0.85em;
-		color: #a1aaa5;
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.meta li {
-			position: relative;
-			display: inline-block;
-			margin-left: 1em;
-			padding-left: 0;
-		}
-
-			ul.meta li a {
-				color: inherit;
-				outline: 0;
-			}
-
-			ul.meta li:first-child {
-				margin-left: 0;
-			}
-
-			ul.meta li:before {
-				opacity: 0.5;
-				cursor: default;
-				margin-right: 0.5em;
-			}
 
 /* Menu */
 
@@ -2513,12 +2484,14 @@ input, select, textarea {
 			}
 
 				#banner .content .button:hover {
-					color: #e4e7e5;
-					border-color: rgba(87, 93, 89, 0.75);
+					color: #ffffff;
+					border-color: rgba(0, 0, 0, 0.75);
+					background-color: #000 !important;
+					transition: color 0.3s, background-color .75s;
 				}
 
 				#banner .content .button:active {
-					color: #fff;
+					color: #000000;
 					border-color: #616763;
 				}
 
@@ -3099,4 +3072,41 @@ input, select, textarea {
     margin-Right: 20%;
 	border-radius: 100%;
 
+}
+.hobbies_grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-items: center;
+	gap: 10px;
+  }
+  
+  .hobbies_grid-item {
+	width: 30%; 
+	overflow: hidden;
+	border-radius: 100%;
+  }
+  
+  .hobbies_grid-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 3.3s ease-in-out;
+  }
+  .hobbies_grid-item:hover img {
+	animation: spin 2s infinite linear; /* Adjust the duration as needed */
+  }
+  .hobbies_grid-item:l img {
+	animation: spinback 2s infinite linear; /* Adjust the duration as needed */
+  }
+  
+  @keyframes spin {
+	to {
+	  transform: scale(1.05) rotate(360deg);
+	}
+}
+	@keyframes spinback {
+		to {
+		  transform: scale(1.05) rotate(-360deg);
+		}
 }
