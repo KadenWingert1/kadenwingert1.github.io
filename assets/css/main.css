@@ -3066,9 +3066,7 @@ input, select, textarea {
 	}
 
 .profile-image {
-    max-width: 27%;
-    float:inline-end;
-	height: fit-content;
+    float:right;
     margin-Right: 20%;
 	border-radius: 100%;
 
@@ -3076,41 +3074,6 @@ input, select, textarea {
 .about_me{
 	padding-left: 20%;
 	padding-right: 20%;
-}
-.hobbies_grid-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items:center;
-	justify-items: center;
-	gap: 0;
-	padding-left: 10%;
-	padding-right: 10%;
-
-  }
-  
-  .hobbies_grid-item {
-	width: 30%; 
-	overflow: hidden;
-	border-radius: 100%;
-  }
-  
-  .hobbies_grid-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 3.3s ease-in-out;
-  }
-  .hobbies_grid-item:hover img {
-	animation: spin 2s infinite linear; /* Adjust the duration as needed */
-  }
-  .hobbies_grid-item:l img {
-	animation: spinback 2s infinite linear; /* Adjust the duration as needed */
-  }
-  
-  @keyframes spin {
-	to {
-	  transform: rotate(360deg);
-	}
 }
 
 #main{
@@ -3120,3 +3083,74 @@ input, select, textarea {
 .skills_section{
 	border-top: solid 1px #c1cac5;
 }
+
+
+.sport-button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+  }
+
+  .sport-button {
+	padding: 0.5em 1em;
+	background-color: #0ebac5;
+	border: none;
+	user-select: none;
+	cursor: pointer;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: all 0.5s linear;
+	color: #fff;
+	position: relative;
+	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.sport-button:hover::after, .sport-button:hover::before {
+	content: '';
+	background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+
+	animation: move-right-side 1s ease infinite;
+}
+ 
+    .sport-button:hover::before {
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        inset: 0;
+        animation: move-left-side 1s ease infinite;
+        z-index: -2;
+    }
+ 
+    .sport-button:hover {
+        background-color: #fff;
+        color: #00C9FF;
+		cursor:default;
+    }
+	
+	  ul.special li {
+		margin: 10px;
+		text-align: center;
+	  }
+	
+	  
+  .box.feature i {
+    font-size: 5em; 
+  }
+
+
+
+
+
+
+
+
