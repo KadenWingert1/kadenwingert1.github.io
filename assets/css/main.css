@@ -3073,12 +3073,19 @@ input, select, textarea {
 	border-radius: 100%;
 
 }
+.about_me{
+	padding-left: 20%;
+	padding-right: 20%;
+}
 .hobbies_grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
+	align-items:center;
 	justify-items: center;
-	gap: 10px;
+	gap: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+
   }
   
   .hobbies_grid-item {
@@ -3107,7 +3114,9 @@ input, select, textarea {
 }
 
 #main{
-	border-top: solid 1px #c1cac5 ;
-	border-bottom: solid 1px #c1cac5;
-	margin-bottom: 5px;
+	border-top: solid 1px #c1cac5;
+
+}
+.skills_section{
+	border-top: solid 1px #c1cac5;
 }
