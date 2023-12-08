@@ -3102,11 +3102,12 @@ input, select, textarea {
   
   @keyframes spin {
 	to {
-	  transform: scale(1.05) rotate(360deg);
+	  transform: rotate(360deg);
 	}
 }
-	@keyframes spinback {
-		to {
-		  transform: scale(1.05) rotate(-360deg);
-		}
+
+#main{
+	border-top: solid 1px #c1cac5 ;
+	border-bottom: solid 1px #c1cac5;
+	margin-bottom: 5px;
 }
