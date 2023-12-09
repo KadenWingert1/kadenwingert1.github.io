@@ -3305,3 +3305,53 @@ ul.special li i {
 .col-4{
 	padding: 4em;
 }
+
+/* Add this CSS to your stylesheet */
+.project-card {
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.3s ease-in-out;
+	display: block;
+  }
+  
+  .project-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transform: scale(1.05);
+  }
+  
+  .box.feature {
+	border: 2px solid #ccc; /* Adjust the color and size of the border */
+	padding: 20px; /* Add some padding to the box */
+	position: relative;
+  }
+  .project-overlay {
+	position: absolute;
+	top: 20px; /* Adjust the top position as needed */
+	left: 20px; /* Adjust the left position as needed */
+	background-color: #422020(0, 0, 0, 0.7); /* Adjust the background color and opacity */
+	padding: 1px;
+	color: black;
+	font-size: 12px;
+	border: .25px #000 solid;
+	display: none; 
+
+  }
+  .project-text{
+	margin-bottom: 0%;
+	background-color: white; /* Adjust the background color and opacity */
+	font-family: 'Poppins', 'Helvetica', 'sansins'
+
+  }
+  
+  .project-card:hover .project-overlay {
+	display: block;
+
+  }
+  
+
+  .project-card:hover .image {
+	transform: scale(1.05);
+  }
+  
+  
