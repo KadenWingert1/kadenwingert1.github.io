@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body class="homepage is-preload">
     <div id="page-wrapper">
@@ -30,9 +34,9 @@
         <ul>
           <li class="current"><a href="index.html">Home</a></li>
           <li><a href="#">About Me</a></li>
-          <li><a href="left-sidebar.html">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="left-sidebar.html">Experience</a></li>
-          <li><a href="right-sidebar.html">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -84,83 +88,83 @@
         </section>
 
         <div class="col-12 skills_section">
-          <section class="box highlight">
+          <section id="skills" class="box highlight">
             <header>
-              <h2>Skills</h2>
+              <h2 class="skills_heading">Skills</h2>
             </header>
             <div class="skill_icons">
                 <div class="col-3 col-6-medium col-12-small">
                   <section class="box feature">
                     <ul class="special">
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-html5-plain colored "></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-css3-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-bootstrap-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-tailwindcss-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-nodejs-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-javascript-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-react-original colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-java-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-spring-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-android-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-c-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-cplusplus-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-csharp-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-python-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-mongodb-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-mysql-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-graphql-plain colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-github-original colored"></i>
                       </li>
-                      <li>
+                      <li class="bounceElement">
                         <i class="devicon-gitlab-plain colored"></i>
                       </li>
                     </ul>
                   </section>
                 </div>
             </div>
-          </section>
+          <section>
         </div>
         <!-- Features -->
-        <section class="box features">
+        <section id="projects">
           <h2 class="major"><span>Projects</span></h2>
           <div>
             <div class="row">
-              <div class="col-3 col-6-medium col-12-small">
+              <div class="col-4">
                 <!-- Feature -->
                 <section class="box feature">
                   <a href="#" class="image featured"
@@ -174,7 +178,7 @@
                   </p>
                 </section>
               </div>
-              <div class="col-3 col-6-medium col-12-small">
+              <div class="col-4">
                 <!-- Feature -->
                 <section class="box feature">
                   <a href="#" class="image featured"
@@ -188,7 +192,9 @@
                   </p>
                 </section>
               </div>
-              <div class="col-3 col-6-medium col-12-small">
+            </div>
+            <div class="row">
+              <div class="col-4">
                 <!-- Feature -->
                 <section class="box feature">
                   <a href="#" class="image featured"
@@ -202,7 +208,7 @@
                   </p>
                 </section>
               </div>
-              <div class="col-3 col-6-medium col-12-small">
+              <div class="col-4">
                 <!-- Feature -->
                 <section class="box feature">
                   <a href="#" class="image featured"
@@ -264,5 +270,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src ="assets/js/buttons.js"></script>
   </body>
 </html>
