@@ -3286,8 +3286,15 @@ ul.special li i {
 }
 
 .col-4 {
-	padding: 4em;
+	padding: 8% 6% 8% 6%;
+
 }
+
+.col-4.smaller-card {
+	padding: 0% 6% 8% 6%;
+
+}
+
 
 
 .project-card {
@@ -3325,11 +3332,13 @@ ul.special li i {
 
 }
 
-.image .featured {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+
+  
+  .image.featured {
+	max-width: 100%; /* Ensure the image doesn't exceed the container width */
+	height: auto; /* Maintain the aspect ratio */
+  }
+  
 
 .project-text {
 	margin-bottom: 0%;
@@ -3378,19 +3387,27 @@ ul.special li i {
 }
 
 .project-container2 {
-	padding: 10%;
+	padding: 4%;
+	padding-top:0%;
 	display: flex;
-	flex-grow: 1;
+	flex: 10%;
 	align-self: center;
 	justify-content: space-around;
+}
+.container.photos{
+	justify-content: space-around;
+	align-self: center;
+	flex: 90%;
+	padding: 4%;
+	
 }
 
 .project-description-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	padding: 5%;
 	padding-top: 2%;
-	background-color: #EEEEEE;
+	background-color: rgb(238,238,238);
 	border-radius: 10px;
 }
 
@@ -3490,6 +3507,7 @@ label {
 ul.project-skills-used {
 	list-style: none;
 	padding: 0;
+	padding-top: 6%;
 	display: flex;
 }
 
@@ -3510,9 +3528,8 @@ ul.project-skills-used li {
 }
 .container.photos {
 	margin: 0 auto;
-	max-width: 700px;
-	max-height: 100vh;
-	background-color: white;
+	max-width: 65vh;
+	max-height: 80vh;
 }
 
 .xy-center {
@@ -3527,13 +3544,12 @@ ul.project-skills-used li {
 }
 
 .r-3-2 {
-	width: 100%;
-	padding-bottom: 66.667%;
-	background-color: #ddd;
+	padding-bottom: 100%;
+	overflow: hidden;
 }
 
 .image-holder {
-	background-size: cover;
+	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -3541,12 +3557,15 @@ ul.project-skills-used li {
 .gallery-wrapper {
 	position: relative;
 	overflow: hidden;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+
 }
 
 .gallery {
 	position: relative;
 	white-space: nowrap;
-	font-size: 0;
+	font-size: 0;	
 }
 
 .item-wrapper {
@@ -3554,7 +3573,6 @@ ul.project-skills-used li {
 	width: 23%;
 	/* arbitrary value */
 	display: inline-block;
-	background-color: white;
 }
 
 .gallery-item {
@@ -3570,13 +3588,14 @@ ul.project-skills-used li {
 	border-top: none;
 	display: flex;
 	flex-direction: row;
+	padding-bottom:10%;
 }
 
 .move-btn {
 	display: inline-block;
 	width: 50%;
 	border: none;
-	color: #ccc;
+	color: black;
 	background-color: transparent;
 	padding: 0.2em 1.5em;
 }
@@ -3592,4 +3611,9 @@ ul.project-skills-used li {
 .move-btn.right {
 	cursor: e-resize;
 }
+.featured-item{
+	border-radius: 10px;
+	margin-bottom: 4%;
+}
+
 /*end image gallary*/

@@ -114,16 +114,16 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 //Start this baby up
 (function init() {
 	var images = [
+		'images/projects/sportsphere/login-screen.png',
+		'images/projects/sportsphere/signup.png',
 		'images/projects/sportsphere/sportsphere.png',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/city.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/deer.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/flowers.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/food.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/guy.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/landscape.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/lips.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/night.jpg',
-		'https://s3-us-west-2.amazonaws.com/forconcepting/800Wide50Quality/table.jpg'
+		'images/projects/sportsphere/map-game-pin.png',
+		'images/projects/sportsphere/map-wide-view.png',
+		'images/projects/sportsphere/filter.png',
+		'images/projects/sportsphere/view-post.png',
+		'images/projects/sportsphere/calender.png',
+		'images/projects/sportsphere/admin.png',
+		'images/projects/sportsphere/profile.png',
 	];
 	
 	//Set Initial Featured Image
