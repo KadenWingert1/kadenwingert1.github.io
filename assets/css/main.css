@@ -3380,33 +3380,36 @@ ul.special li i {
 	padding: 0 10px;
 	border-top: solid 10px #c1cac5;
 }
-.homepage.projects{
-padding-top: 0em;
-}
-.project-title{
-	font-size: 4em;
-}
-.project-container1 {
-	font-size: 1vw;
-	width: fit-content;
-	align-self: center; 
+
+.homepage.projects {
+	padding-top: 0em;
 }
 
-.project-container2{
+.project-title {
+	font-size: 4em;
+}
+
+.project-container1 {
+	position: fixed;
+	top: 50%;
+	left: 0;
+}
+
+.project-container2 {
 	padding: 10%;
 	display: flex;
 	flex-grow: 1;
 	align-self: center;
 	justify-content: space-around;
 }
-.project-description-container{
+
+.project-description-container {
 	display: flex;
 	flex-direction: column;
 	padding: 5%;
 	padding-top: 2%;
-	background-color: #EEEEEE; 
-	border-radius: 10px; 
-	margin-right: 10%;
+	background-color: #EEEEEE;
+	border-radius: 10px;
 }
 
 
@@ -3416,7 +3419,7 @@ padding-top: 0em;
 	margin: auto;
 	width: 50px;
 	height: 50px;
-	margin-top: 0em;
+	top: 0;
 	cursor: pointer;
 }
 
@@ -3470,29 +3473,124 @@ label {
 .close-container:hover label {
 	opacity: 1;
 }
+
 /*End close button on projects page*/
 
 .project-container3 {
-	font-size: 1vw;
-	width: fit-content;
-	align-self: center; 
+	position: fixed;
+	top: 50%;
+	right: 0;
 }
 
 .project-container4 {
 	position: fixed;
-	top:0;
-	right:0;	
+	top: 0%;
+	right: 0;
 }
+
 ul.project-skills-used {
-	list-style: none; /* Remove default list-style (bullet points) */
-	padding: 0; /* Remove default padding */
-	display: flex; /* Use flexbox to align items in a row */
-  }
-  
-  ul.project-skills-used li {
-	background-color: #f8f8f8; /* Slightly different background color */
-	margin-right: 10px; /* Adjust spacing between items */
-	padding: 3px; /* Add padding for a cleaner look */
-	border-radius: 5px; /* Add rounded corners */
-  }
-  
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+ul.project-skills-used li {
+	background-color: #f8f8f8;
+	margin-right: 10px;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+/*image gallary*/
+*,*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+.container.photos {
+	margin: 0 auto;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%;
+	/* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item {
+	opacity: 0.5;
+}
+
+.gallery-item.active {
+	opacity: 1;
+}
+
+.controls {
+	font-size: 5;
+	border-top: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+	color: #ccc;
+	background-color: transparent;
+	padding: 0.2em 1.5em;
+}
+
+.move-btn:first-child {
+	border-right: none;
+}
+
+.move-btn.left {
+	cursor: w-resize;
+}
+
+.move-btn.right {
+	cursor: e-resize;
+}
+/*end image gallary*/
