@@ -2850,25 +2850,7 @@ body {
 		padding-bottom: 1px;
 	}
 
-	#titleBar {
-		-moz-backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-transition: -moz-transform 0.5s ease;
-		-webkit-transition: -webkit-transform 0.5s ease;
-		-ms-transition: -ms-transform 0.5s ease;
-		transition: transform 0.5s ease;
-		display: block;
-		height: 44px;
-		left: 0;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 10001;
-		background-color: rgba(21, 38, 23, 0.8);
-		background-image: url("images/overlay.png");
-	}
+
 
 	#titleBar .title {
 		display: block;
@@ -3412,6 +3394,22 @@ ul.special li i {
 	border-radius: 10px;
 }
 
+.view-github {
+	width: 9.5em;
+	white-space: nowrap; 
+	padding: .2% .5%;
+	margin-bottom: 2%;
+	background-color: #0366d6; /* GitHub blue color */
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out;
+  }
+  
+  .view-github:hover {
+	background-color: #034471; /* Darker blue on hover */
+  }
+
 
 /*Close button on projects page*/
 .close-container {
@@ -3421,6 +3419,7 @@ ul.special li i {
 	height: 50px;
 	top: 0;
 	cursor: pointer;
+	z-index: 1000;
 }
 
 .leftright {
