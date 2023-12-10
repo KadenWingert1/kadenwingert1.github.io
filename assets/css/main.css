@@ -383,7 +383,7 @@ header>p {
 	flex-wrap: wrap;
 	box-sizing: border-box;
 	align-items: stretch;
-	justify-content: center; 
+	justify-content: center;
 }
 
 .row>* {
@@ -2035,8 +2035,8 @@ ul.actions li:first-child {
 
 /* Contact */
 
-#contact{
-margin-bottom: 2em;
+#contact {
+	margin-bottom: 2em;
 }
 
 ul.contact {
@@ -3206,7 +3206,6 @@ body {
 	float: right;
 	margin-Right: 20%;
 	border-radius: 100%;
-
 }
 
 .about_me {
@@ -3299,10 +3298,12 @@ ul.special li i {
 	display: inline-block;
 	top: 0;
 }
-#projects{
+
+#projects {
 	padding-top: 6em;
 }
-.col-4{
+
+.col-4 {
 	padding: 4em;
 }
 
@@ -3312,46 +3313,186 @@ ul.special li i {
 	color: inherit;
 	transition: transform 0.3s ease-in-out;
 	display: block;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
-  }
-  
-  .project-card:hover {
+}
+
+.project-card:hover {
 	transform: scale(1.1);
-	box-shadow: 0 0 10px rgba(255, 253, 253, 0.2);
+	box-shadow: 0 0 10px rgba(255, 253, 253, 0.2), 0 4px 8px rgba(0, 0, 0, 0.5);
 	transform: scale(1.1);
-  }
-  .project-card:hover .project-overlay {
-	display: block;
-  }
-  
-  .project-card:hover .image .card_heading{
-	transform: scale(1.1);
-	
-  }
-  .project-overlay {
+}
+
+.project-card .project-overlay {
 	position: absolute;
-	top: -2.9em; 
-	left: 0em; 
+	top: -2.9em;
+	left: 0em;
 	padding: 1px;
 	color: black;
-	font-size: .75em;
+	font-size: 0.75em;
 	border-bottom: none;
-	display: none; 
-  }
-  .image .featured{
-    width:  1em;
-    height: 4em;
-    object-fit: cover;
-  }
-  .project-text{
+	display: none;
+}
+
+.project-card:hover .project-overlay {
+	display: block;
+}
+
+.project-card:hover .image .card_heading {
+	transform: scale(1.1);
+
+}
+
+.image .featured {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project-text {
 	margin-bottom: 0%;
-	background-color: white; /* Adjust the background color and opacity */
+	background-color: white;
+	/* Adjust the background color and opacity */
 	font-family: 'Poppins', 'Helvetica', 'sansins'
+}
 
+.project-image {
+	float: right;
+	margin-Right: 20%;
+}
+
+#previous.button,
+#next.button {
+	padding: 1.25% .25%;
+	font-size: 400%;
+
+}
+
+#previous.button:hover,
+#next.button:hover {
+	opacity: .75;
+}
+
+
+#main.projects-main {
+	display: flex;
+	flex-direction: row;
+	padding: 0 10px;
+	border-top: solid 10px #c1cac5;
+}
+.homepage.projects{
+padding-top: 0em;
+}
+.project-title{
+	font-size: 4em;
+}
+.project-container1 {
+	font-size: 1vw;
+	width: fit-content;
+	align-self: center; 
+}
+
+.project-container2{
+	padding: 10%;
+	display: flex;
+	flex-grow: 1;
+	align-self: center;
+	justify-content: space-around;
+}
+.project-description-container{
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	padding-top: 2%;
+	background-color: #EEEEEE; 
+	border-radius: 10px; 
+	margin-right: 10%;
+}
+
+
+/*Close button on projects page*/
+.close-container {
+	position: relative;
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	margin-top: 0em;
+	cursor: pointer;
+}
+
+.leftright {
+	height: 4px;
+	width: 50px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #F4A259;
+	border-radius: 2px;
+	transform: rotate(45deg);
+	transition: all .3s ease-in;
+}
+
+.rightleft {
+	height: 4px;
+	width: 50px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #F4A259;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+	transition: all .3s ease-in;
+}
+
+label {
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: .6em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: all .3s ease-in;
+	opacity: 0;
+}
+
+.close {
+	margin: 60px 0 0 5px;
+	position: absolute;
+}
+
+.close-container:hover .leftright {
+	transform: rotate(-45deg);
+	background-color: #F25C66;
+}
+
+.close-container:hover .rightleft {
+	transform: rotate(45deg);
+	background-color: #F25C66;
+}
+
+.close-container:hover label {
+	opacity: 1;
+}
+/*End close button on projects page*/
+
+.project-container3 {
+	font-size: 1vw;
+	width: fit-content;
+	align-self: center; 
+}
+
+.project-container4 {
+	position: fixed;
+	top:0;
+	right:0;	
+}
+ul.project-skills-used {
+	list-style: none; /* Remove default list-style (bullet points) */
+	padding: 0; /* Remove default padding */
+	display: flex; /* Use flexbox to align items in a row */
   }
   
-
-
-  
+  ul.project-skills-used li {
+	background-color: #f8f8f8; /* Slightly different background color */
+	margin-right: 10px; /* Adjust spacing between items */
+	padding: 3px; /* Add padding for a cleaner look */
+	border-radius: 5px; /* Add rounded corners */
+  }
   
