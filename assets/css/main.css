@@ -3184,29 +3184,45 @@ body {
 
 }
 
+
 .profile-image {
 	float: right;
 	margin-Right: 20%;
 	border-radius: 100%;
 }
 
-.about_me {
-	padding-left: 20%;
-	padding-right: 20%;
+.about-skills-container{
+	display: flex;
 }
+.about_me {
+padding-left: 5%;
+padding-right: 2.5%;
+}
+.skills_section{
 
+	padding-right: 5%;
+}
 #main {
 	border-top: solid 1px #c1cac5;
 
 }
 
-.skills_section {
+.hobbies-list{
+	list-style: none; /* Remove bullet points */
+	padding: 0;
+	padding-left: 15%;
+	padding-right: 15%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+/* .skills_section {
 	border-top: solid 1px #c1cac5;
-}
+} */
 
-.skills_heading {
+/* .skills_heading {
 	padding: 2em 0 2em 0;
-}
+} */
 
 
 .sport-button {
@@ -3281,9 +3297,6 @@ ul.special li i {
 	top: 0;
 }
 
-#projects {
-	padding-top: 6em;
-}
 
 .col-4 {
 	padding: 8% 6% 8% 6%;
@@ -3378,6 +3391,8 @@ ul.special li i {
 #main.projects-main.nordlandForge {
 	padding: 5%;
 }
+
+
 
 
 .homepage.projects {
@@ -3675,3 +3690,6 @@ max-height: 70vh;
 }
 
 /*end image gallery*/
+
+
+
