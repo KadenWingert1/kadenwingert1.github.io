@@ -3368,9 +3368,17 @@ ul.special li i {
 #main.projects-main {
 	display: flex;
 	flex-direction: row;
-	padding: 0 10px;
+	padding: 5%;
+	padding-top: 2%;
 	border-top: solid 10px #c1cac5;
 }
+#main.projects-main.pokemon {
+	padding: 5%;
+}
+#main.projects-main.nordlandForge {
+	padding: 5%;
+}
+
 
 .homepage.projects {
 	padding-top: 0em;
@@ -3390,10 +3398,14 @@ ul.special li i {
 	padding: 4%;
 	padding-top: 0%;
 	display: flex;
-	flex: 10%;
+	flex: 20%;
 	align-self: center;
 	justify-content: space-around;
 }
+
+/* .project-container2.col-3.nordlandForge{
+	padding-top: 4%;
+} */
 
 .container.photos {
 	justify-content: space-around;
@@ -3411,7 +3423,6 @@ ul.special li i {
 	background-color: rgb(238, 238, 238);
 	border-radius: 10px;
 }
-
 .view-github {
 	width: 9.5em;
 	white-space: nowrap;
@@ -3512,13 +3523,15 @@ ul.project-skills-used {
 	padding: 0;
 	padding-top: 6%;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 ul.project-skills-used li {
 	background-color: #f8f8f8;
-	margin-right: 10px;
-	padding: 3px;
-	border-radius: 5px;
+	margin: .5em;
+	height: 1.75%;
+	padding: .5em;
+	border-radius: .25em;
 }
 
 /*image gallery*/
@@ -3541,6 +3554,7 @@ ul.project-skills-used li {
 	margin: 0 auto;
 	max-width: 100vh;
 	max-height: 70vh;
+	padding-top: 0;
 
 }
 
@@ -3559,8 +3573,7 @@ ul.project-skills-used li {
 	padding-bottom: 50%;
 }
 .container.photos.pokemon {
-/* padding-top: 0; */
-
+padding-top: 0;
 margin: 0 auto;
 max-width: 100vh;
 max-height: 70vh;
