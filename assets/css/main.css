@@ -369,8 +369,12 @@ header>p {
 		border-top: 1px solid rgb(193,202,197);
 	  }
 	  .hobbies-list{
-		justify-content: space-between !important;
+		justify-content: center !important;
 	  }
+	  /* circle */
+ul.experience-list li .date::after {
+	right: calc((100% + var(--col-gap) + var(--line-w) / 2) - 2%) !important;
+  }
 	
 	  .about_me {
 		padding-bottom: 5%; /* Add some space between the sections */
