@@ -3295,8 +3295,6 @@ ul.special li i {
 
 }
 
-
-
 .project-card {
 	text-decoration: none;
 	color: inherit;
@@ -3333,12 +3331,14 @@ ul.special li i {
 }
 
 
-  
-  .image.featured {
-	max-width: 100%; /* Ensure the image doesn't exceed the container width */
-	height: auto; /* Maintain the aspect ratio */
-  }
-  
+
+.image.featured {
+	max-width: 100%;
+	/* Ensure the image doesn't exceed the container width */
+	height: auto;
+	/* Maintain the aspect ratio */
+}
+
 
 .project-text {
 	margin-bottom: 0%;
@@ -3388,18 +3388,19 @@ ul.special li i {
 
 .project-container2 {
 	padding: 4%;
-	padding-top:0%;
+	padding-top: 0%;
 	display: flex;
 	flex: 10%;
 	align-self: center;
 	justify-content: space-around;
 }
-.container.photos{
+
+.container.photos {
 	justify-content: space-around;
 	align-self: center;
 	flex: 90%;
 	padding: 4%;
-	
+
 }
 
 .project-description-container {
@@ -3407,25 +3408,27 @@ ul.special li i {
 	flex-direction: row;
 	padding: 5%;
 	padding-top: 2%;
-	background-color: rgb(238,238,238);
+	background-color: rgb(238, 238, 238);
 	border-radius: 10px;
 }
 
 .view-github {
 	width: 9.5em;
-	white-space: nowrap; 
+	white-space: nowrap;
 	padding: .2% .5%;
 	margin-bottom: 2%;
-	background-color: #0366d6; /* GitHub blue color */
+	background-color: #0366d6;
+	/* GitHub blue color */
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
 	transition: background-color 0.3s ease-in-out;
-  }
-  
-  .view-github:hover {
-	background-color: #034471; /* Darker blue on hover */
-  }
+}
+
+.view-github:hover {
+	background-color: #034471;
+	/* Darker blue on hover */
+}
 
 
 /*Close button on projects page*/
@@ -3518,19 +3521,53 @@ ul.project-skills-used li {
 	border-radius: 5px;
 }
 
-/*image gallary*/
-*,*::before,
+/*image gallery*/
+*,
+*::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	outline: none;
 	box-sizing: border-box;
 }
+
 .container.photos {
 	margin: 0 auto;
 	max-width: 65vh;
 	max-height: 80vh;
 }
+
+.container.photos.nordlandForge {
+	margin: 0 auto;
+	max-width: 100vh;
+	max-height: 70vh;
+
+}
+
+.nordlandForge .image-holder {
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	padding-bottom: 50%;
+}
+.pokemon .image-holder {
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+	padding-bottom: 50%;
+}
+.container.photos.pokemon {
+/* padding-top: 0; */
+
+margin: 0 auto;
+max-width: 100vh;
+max-height: 70vh;
+  }
+  
+
+  
 
 .xy-center {
 	position: absolute;
@@ -3546,11 +3583,12 @@ ul.project-skills-used li {
 .r-3-2 {
 	padding-bottom: 100%;
 	overflow: hidden;
+
 }
 
 .image-holder {
 	background-size: contain;
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat: no-repeat;
 }
 
@@ -3559,21 +3597,27 @@ ul.project-skills-used li {
 	overflow: hidden;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-
+}
+.gallery-wrapper.typing {
+	position: relative;
+	overflow: hidden;
+	width: 120%;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .gallery {
 	position: relative;
 	white-space: nowrap;
-	font-size: 0;	
+	font-size: 0;
 }
 
 .item-wrapper {
 	cursor: pointer;
 	width: 23%;
-	/* arbitrary value */
 	display: inline-block;
 }
+
 
 .gallery-item {
 	opacity: 0.5;
@@ -3588,7 +3632,7 @@ ul.project-skills-used li {
 	border-top: none;
 	display: flex;
 	flex-direction: row;
-	padding-bottom:10%;
+	padding-bottom: 10%;
 }
 
 .move-btn {
@@ -3611,9 +3655,10 @@ ul.project-skills-used li {
 .move-btn.right {
 	cursor: e-resize;
 }
-.featured-item{
+
+.featured-item {
 	border-radius: 10px;
-	margin-bottom: 4%;
+	align-self: baseline;
 }
 
-/*end image gallary*/
+/*end image gallery*/

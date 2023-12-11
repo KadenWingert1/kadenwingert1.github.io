@@ -1,16 +1,16 @@
-    var bounceElements = document.querySelectorAll('.bounceElement');
+var bounceElements = document.querySelectorAll('.bounceElement');
 
-    bounceElements.forEach(function(bounceElement) {
-      var icon = bounceElement.querySelector('i');
+bounceElements.forEach(function (bounceElement) {
+	var icon = bounceElement.querySelector('i');
 
-      bounceElement.addEventListener('mouseenter', function() {
-        icon.classList.add('animate__animated', 'animate__bounce');
-      });
+	bounceElement.addEventListener('mouseenter', function () {
+		icon.classList.add('animate__animated', 'animate__bounce');
+	});
 
-      bounceElement.addEventListener('mouseleave', function() {
-        icon.classList.remove('animate__animated', 'animate__bounce');
-      });
-    });
+	bounceElement.addEventListener('mouseleave', function () {
+		icon.classList.remove('animate__animated', 'animate__bounce');
+	});
+});
 
 
 
@@ -34,14 +34,14 @@ var left;
 
 function selectItem(e) {
 	if (e.target.classList.contains('active')) return;
-	
+
 	featured.style.backgroundImage = e.target.style.backgroundImage;
-	
+
 	for (var i = 0; i < galleryItems.length; i++) {
 		if (galleryItems[i].classList.contains('active'))
 			galleryItems[i].classList.remove('active');
 	}
-	
+
 	e.target.classList.add('active');
 }
 
@@ -63,7 +63,7 @@ function galleryWrapRight() {
 function moveLeft() {
 	left = left || 0;
 
-	leftInterval = setInterval(function() {
+	leftInterval = setInterval(function () {
 		gallery.style.left = left + '%';
 
 		if (left > -itemWidth) {
@@ -78,17 +78,17 @@ function moveLeft() {
 function moveRight() {
 	//Make sure there is element to the leftd
 	if (left > -itemWidth && left < 0) {
-		left = left  - itemWidth;
-		
+		left = left - itemWidth;
+
 		var last = gallery.children[gallery.children.length - 1];
 		gallery.removeChild(last);
 		gallery.style.left = left + '%';
-		gallery.insertBefore(last, gallery.children[0]);	
+		gallery.insertBefore(last, gallery.children[0]);
 	}
-	
+
 	left = left || 0;
 
-	leftInterval = setInterval(function() {
+	leftInterval = setInterval(function () {
 		gallery.style.left = left + '%';
 
 		if (left < 0) {
@@ -113,22 +113,60 @@ rightBtn.addEventListener('mouseleave', stopMovement);
 
 //Start this baby up
 (function init() {
-	var images = [
-		'images/projects/sportsphere/login-screen.png',
-		'images/projects/sportsphere/signup.png',
-		'images/projects/sportsphere/sportsphere.png',
-		'images/projects/sportsphere/map-game-pin.png',
-		'images/projects/sportsphere/map-wide-view.png',
-		'images/projects/sportsphere/filter.png',
-		'images/projects/sportsphere/view-post.png',
-		'images/projects/sportsphere/calender.png',
-		'images/projects/sportsphere/admin.png',
-		'images/projects/sportsphere/profile.png',
-	];
-	
+	var currentPage = window.location.pathname;
+
+	if (currentPage.includes('sportsphere')) {
+		images = [
+			'images/projects/sportsphere/login-screen.png',
+			'images/projects/sportsphere/signup.png',
+			'images/projects/sportsphere/sportsphere.png',
+			'images/projects/sportsphere/map-game-pin.png',
+			'images/projects/sportsphere/map-wide-view.png',
+			'images/projects/sportsphere/filter.png',
+			'images/projects/sportsphere/view-post.png',
+			'images/projects/sportsphere/calender.png',
+			'images/projects/sportsphere/admin.png',
+			'images/projects/sportsphere/profile.png',
+		];
+	} else if (currentPage.includes('nordlandforge')) {
+		images = [
+			'images/projects/nordlandForge/home-page.png',
+			'images/projects/nordlandForge/show-all.png',
+			'images/projects/nordlandForge/update.png',
+			'images/projects/nordlandForge/remove.png',
+			'images/projects/nordlandForge/create.png',
+			'images/projects/nordlandForge/about.png',
+			// ... other images for the nordlandforge page
+		];
+	}
+	else if (currentPage.includes('pokemon')) {
+		images = [
+			'images/projects/pokemon/start.png',
+			'images/projects/pokemon/map.png',
+			'images/projects/pokemon/map2.png',
+			'images/projects/pokemon/battle.png',
+			'images/projects/pokemon/pokemart.png',
+			'images/projects/pokemon/trainers.png',
+			// ... other images for the nordlandforge page
+		];
+	}
+		else if (currentPage.includes('typingGame')) {
+			images = [
+				'images/projects/typingGame/first.png',
+				'images/projects/typingGame/begin.png',
+				'images/projects/typingGame/middle.png',
+				'images/projects/typingGame/end.png',
+				// ... other images for the nordlandforge page
+			];
+	} else {
+		// Default images for other pages
+		images = [
+		];
+	}
+
 	//Set Initial Featured Image
 	featured.style.backgroundImage = 'url(' + images[0] + ')';
-	
+
 	//Set Images for Gallery and Add Event Listeners
 	for (var i = 0; i < galleryItems.length; i++) {
 		galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
