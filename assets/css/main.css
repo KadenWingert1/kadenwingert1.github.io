@@ -364,6 +364,10 @@ header>p {
 	  .skills_section {
 		order: 2; /* Change the order to move the skills section below the about section */
 		padding-top: 5%; /* Add some space between the sections */
+		border-top: 1px solid rgb(193,202,197);
+	  }
+	  .hobbies-list{
+		justify-content: space-between !important;
 	  }
 	
 	  .about_me {
