@@ -3692,7 +3692,6 @@ max-height: 70vh;
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
 
-
 #experience {
   --color: rgba(30, 30, 30);
   --bgColor: rgba(255,255,255);
@@ -3700,7 +3699,7 @@ max-height: 70vh;
   display: grid;
   align-content: center;
   gap: 2rem;
-  padding: 2rem;
+padding:2rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: var(--bgColor);
@@ -3717,7 +3716,7 @@ ul.experience-list {
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(60rem, 90%);
+  width: min(80rem, 100%);
   margin-inline: auto;
 }
 
@@ -3776,7 +3775,6 @@ ul.experience-list li .date::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
   position: absolute;
   top: 100%;
-
   clip-path: polygon(0 0, 100% 0, 0 100%);
   right: 0;
 }
@@ -3792,7 +3790,7 @@ ul.experience-list li .date::after {
 	border-radius: 50%;
 	top: 50%;
 	transform: translateY(-50%); /* Adjusted this line */
-	right: calc((100% + var(--col-gap) + var(--line-w) / 2) - 2%);
+	right: calc((100% + var(--col-gap) + var(--line-w) / 2) - 1.2%);
   }
   
 
