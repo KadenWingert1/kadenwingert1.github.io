@@ -357,6 +357,18 @@ header>p {
 	.container {
 		width: calc(100% - 100px);
 	}
+	.about-skills-container {
+		flex-direction: column; /* Change the flex direction to column for small screens */
+	  }
+	
+	  .skills_section {
+		order: 2; /* Change the order to move the skills section below the about section */
+		padding-top: 5%; /* Add some space between the sections */
+	  }
+	
+	  .about_me {
+		padding-bottom: 5%; /* Add some space between the sections */
+	  }
 
 }
 
