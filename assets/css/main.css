@@ -2387,11 +2387,13 @@ table.default thead {
 .icon.brands:before {
 	font-family: 'Font Awesome 5 Brands';
 }
-
 /* Page Wrapper */
 
 #page-wrapper>section {
 	margin-bottom: 0;
+}
+.fa-envelope{
+font-size: 0;	
 }
 
 /* Header */
