@@ -2598,7 +2598,7 @@ body {
 	background-repeat: repeat, repeat, no-repeat;
 	background-size: auto, auto, cover;
 	z-index: 1;
-	padding: 11em 0;
+	padding: 7em 0;
 }
 
 #banner .content {
@@ -3226,18 +3226,18 @@ body {
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: center;
-	padding-left: 20%;
-	padding-right: 20%;
+	padding-left: 15%;
+	padding-right: 15%;
 }
 .profile-image-container {
 	flex: .6;
 }
 
 .content.profile {
-	flex: .4
+	flex: .4;
+	padding-left: 10%;
+	padding-right: 10%;
 }
-
-
 
 .about-skills-container {
 	display: flex;
