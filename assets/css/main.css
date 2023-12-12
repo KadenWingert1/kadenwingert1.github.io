@@ -3482,6 +3482,14 @@ ul.special li i {
 	padding: 4%;
 
 }
+.main-content-container{
+	display: flex;
+}
+@media screen and (max-width: 980px) {
+	.main-content-container{
+		flex-direction: column;
+	}
+}
 
 .project-description-container {
 	display: flex;
