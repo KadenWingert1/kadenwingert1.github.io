@@ -2314,6 +2314,7 @@ table.default thead {
 
 .box.feature {
 	text-align: center;
+	height: 100%;
 }
 
 .box.post header {
@@ -3358,7 +3359,6 @@ ul.special li i {
 
 .col-4.smaller-card {
 	padding: 0% 6% 8% 6%;
-
 }
 
 .project-card {
@@ -3367,6 +3367,7 @@ ul.special li i {
 	transition: transform 0.3s ease-in-out;
 	display: block;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	height:100%;
 
 }
 
@@ -3385,6 +3386,7 @@ ul.special li i {
 	font-size: 0.75em;
 	border-bottom: none;
 	display: none;
+	bottom: 0 !important;
 }
 
 .project-card:hover .project-overlay {
