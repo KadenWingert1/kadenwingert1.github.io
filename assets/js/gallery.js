@@ -111,11 +111,15 @@ document.addEventListener("DOMContentLoaded", function () {
       ];
     } else if (currentPage.includes("workforcenavigator")) {
       images = [
-        "images/projects/workforcenavigator/homeScreen.png",
-        "images/projects/workforcenavigator/viewEmployees1.png",
-        "images/projects/workforcenavigator/viewEmployees2.png",
-        "images/projects/workforcenavigator/attendance1.png",
-        "images/projects/workforcenavigator/attendance2.png",
+        "images/projects/workforcenavigator/index.png",
+        "images/projects/workforcenavigator/addEmployee.png",
+        "images/projects/workforcenavigator/analytics.png",
+        "images/projects/workforcenavigator/companyPolicies.png",
+        "images/projects/workforcenavigator/monthlyReport.png",
+        "images/projects/workforcenavigator/payroll.png",
+        "images/projects/workforcenavigator/submitAttendance.png",
+        "images/projects/workforcenavigator/summary.png",
+        "images/projects/workforcenavigator/timeOff.png",
       ];
     } else if (currentPage.includes("nordlandforge")) {
       images = [
