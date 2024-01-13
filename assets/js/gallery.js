@@ -146,6 +146,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "images/projects/typingGame/middle.png",
         "images/projects/typingGame/end.png",
       ];
+    } else if (currentPage.includes("bargainBuddy")) {
+      images = [
+        "images/projects/BargainBuddy/bargainBuddy.png",
+        "images/projects/typingGame/first.png",
+        "images/projects/typingGame/begin.png",
+        "images/projects/typingGame/middle.png",
+        "images/projects/typingGame/end.png",
+      ];
     } else {
       // Default images for other pages
       images = [];
