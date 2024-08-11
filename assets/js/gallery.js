@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function moveRight() {
-    //Make sure there is element to the leftd
+    //Make sure there is element to the left
     if (left > -itemWidth && left < 0) {
       left = left - itemWidth;
 
@@ -94,65 +94,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //Start this baby up
   (function init() {
+    var baseURL = "../images/projects/";
+
     var currentPage = window.location.pathname;
 
     if (currentPage.includes("sportsphere")) {
       images = [
-        "images/projects/sportsphere/login-screen.png",
-        "images/projects/sportsphere/signup.png",
-        "images/projects/sportsphere/sportsphere.png",
-        "images/projects/sportsphere/map-game-pin.png",
-        "images/projects/sportsphere/map-wide-view.png",
-        "images/projects/sportsphere/filter.png",
-        "images/projects/sportsphere/view-post.png",
-        "images/projects/sportsphere/calender.png",
-        "images/projects/sportsphere/admin.png",
-        "images/projects/sportsphere/profile.png",
+        baseURL + "sportsphere/login-screen.png",
+        baseURL + "sportsphere/signup.png",
+        baseURL + "sportsphere/sportsphere.png",
+        baseURL + "sportsphere/map-game-pin.png",
+        baseURL + "sportsphere/map-wide-view.png",
+        baseURL + "sportsphere/filter.png",
+        baseURL + "sportsphere/view-post.png",
+        baseURL + "sportsphere/calender.png",
+        baseURL + "sportsphere/admin.png",
+        baseURL + "sportsphere/profile.png",
       ];
     } else if (currentPage.includes("workforcenavigator")) {
       images = [
-        "images/projects/workforcenavigator/index.png",
-        "images/projects/workforcenavigator/addEmployee.png",
-        "images/projects/workforcenavigator/analytics.png",
-        "images/projects/workforcenavigator/companyPolicies.png",
-        "images/projects/workforcenavigator/monthlyReport.png",
-        "images/projects/workforcenavigator/payroll.png",
-        "images/projects/workforcenavigator/submitAttendance.png",
-        "images/projects/workforcenavigator/summary.png",
-        "images/projects/workforcenavigator/timeOff.png",
+        baseURL + "workforcenavigator/index.png",
+        baseURL + "workforcenavigator/addEmployee.png",
+        baseURL + "workforcenavigator/analytics.png",
+        baseURL + "workforcenavigator/companyPolicies.png",
+        baseURL + "workforcenavigator/monthlyReport.png",
+        baseURL + "workforcenavigator/payroll.png",
+        baseURL + "workforcenavigator/submitAttendance.png",
+        baseURL + "workforcenavigator/summary.png",
+        baseURL + "workforcenavigator/timeOff.png",
       ];
     } else if (currentPage.includes("nordlandforge")) {
       images = [
-        "images/projects/nordlandForge/home-page.png",
-        "images/projects/nordlandForge/show-all.png",
-        "images/projects/nordlandForge/update.png",
-        "images/projects/nordlandForge/remove.png",
-        "images/projects/nordlandForge/create.png",
-        "images/projects/nordlandForge/about.png",
+        baseURL + "nordlandForge/home-page.png",
+        baseURL + "nordlandForge/show-all.png",
+        baseURL + "nordlandForge/update.png",
+        baseURL + "nordlandForge/remove.png",
+        baseURL + "nordlandForge/create.png",
+        baseURL + "nordlandForge/about.png",
       ];
     } else if (currentPage.includes("pokemon")) {
       images = [
-        "images/projects/pokemon/start.png",
-        "images/projects/pokemon/map.png",
-        "images/projects/pokemon/map2.png",
-        "images/projects/pokemon/battle.png",
-        "images/projects/pokemon/pokemart.png",
-        "images/projects/pokemon/trainers.png",
+        baseURL + "pokemon/start.png",
+        baseURL + "pokemon/map.png",
+        baseURL + "pokemon/map2.png",
+        baseURL + "pokemon/battle.png",
+        baseURL + "pokemon/pokemart.png",
+        baseURL + "pokemon/trainers.png",
       ];
     } else if (currentPage.includes("typingGame")) {
       images = [
-        "images/projects/typingGame/first.png",
-        "images/projects/typingGame/begin.png",
-        "images/projects/typingGame/middle.png",
-        "images/projects/typingGame/end.png",
+        baseURL + "typingGame/first.png",
+        baseURL + "typingGame/begin.png",
+        baseURL + "typingGame/middle.png",
+        baseURL + "typingGame/end.png",
       ];
     } else if (currentPage.includes("bargainBuddy")) {
       images = [
-        "images/projects/BargainBuddy/bargainBuddy.png",
-        "images/projects/typingGame/first.png",
-        "images/projects/typingGame/begin.png",
-        "images/projects/typingGame/middle.png",
-        "images/projects/typingGame/end.png",
+        baseURL + "BargainBuddy/bargainBuddy.png",
+
       ];
     } else {
       // Default images for other pages

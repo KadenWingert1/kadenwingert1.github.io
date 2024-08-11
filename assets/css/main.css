@@ -3494,8 +3494,6 @@ ul.special li i {
 	width: 130%;
 
 }
-
-
 .bargainBuddy .feature-text {
 	text-align: center;
 	padding-top: 20%;
@@ -3506,15 +3504,9 @@ ul.special li i {
 	color: #0066cc;
 	font-weight: 100;
 }
-
-
-
 .bargainBuddy .feature-text::after {
-	/* Unicode character for right arrow */
 	font-size: 16px;
-	/* Adjust the arrow size */
 	margin-left: 5px;
-	/* Add some spacing between text and arrow */
 }
 
 .bargainBuddy .feature {
@@ -3812,9 +3804,6 @@ ul.project-skills-used li {
 
 /*end image gallery*/
 
-
-
-
 #experience {
 	--color: rgba(30, 30, 30);
 	--bgColor: rgba(255, 255, 255);
@@ -3827,8 +3816,6 @@ ul.project-skills-used li {
 	color: var(--color);
 	background: var(--bgColor);
 }
-
-
 
 ul.experience-list {
 	--col-gap: 2rem;
