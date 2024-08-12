@@ -353,14 +353,6 @@ header>p {
 		width: calc(100% - 100px);
 	}
 
-	.skills_section {
-		order: 2;
-		/* Change the order to move the skills section below the about section */
-		padding-top: 5%;
-		/* Add some space between the sections */
-		border-top: 1px solid rgb(193, 202, 197);
-	}
-
 	.hobbies-list {
 		justify-content: center !important;
 	}
@@ -1993,10 +1985,6 @@ ul {
 	padding-left: 1em;
 }
 
-ul li {
-	padding-left: 0.5em;
-}
-
 ol {
 	list-style: decimal;
 	padding-left: 1.25em;
@@ -2153,7 +2141,8 @@ ul.special li a:before {
 ul.special li:hover a:before {
 	background: #b9d2ce;
 }
-
+.bounceElement{
+}
 
 /* Menu */
 
@@ -2635,10 +2624,10 @@ body {
 /* Main */
 #main {
 	background: #fff;
-	border-top: solid 5px #b1ddab;
-	border-bottom: solid 5px #c1cac5;
-	border-top-width: 35px;
-	border-bottom-width: 10px;
+	border-top: solid 2px #b1ddab;
+	border-bottom: solid 2px #c1cac5;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
 }
 
 
@@ -2652,7 +2641,6 @@ body {
 
 #footer {
 	text-align: center;
-	padding: 4em 0 4em 0;
 }
 
 #footer a {
@@ -3889,4 +3877,120 @@ ul.experience-list li .descr::before {
 
 .hidden-section {
 	display: none;
+}
+
+/* Container for the whole section */
+.about-me-container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	/* Add padding around the entire section */
+}
+
+/* Container for the About Me content */
+.about-me-content {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 2em;
+	/* Center content and adjust vertical spacing */
+	font-family: "Poppins", sans-serif;
+	/* Limit max width for better layout on large screens */
+}
+
+/* Container for images */
+.about-me-images {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Center images horizontally */
+	gap: 10px;
+	/* Space between images */
+	flex: 0 0 auto;
+	/* Space between images and paragraph */
+	max-width: 450px;
+	/* Limit image container width */
+	margin: 0 auto;
+}
+
+/* Style for images */
+.about-me-images .image {
+	max-width: 100%;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
+}
+
+/* Hobbies and Skills section */
+.hobbies-skills {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	margin-top: 2em;
+	/* Add top margin for spacing */
+}
+
+/* Ensures hobbies and skills sections are side by side */
+.hobbies-skills>section {
+	flex: 1;
+}
+
+/* Hobbies list styling */
+.hobbies-list {
+	list-style: none;
+	padding: 0;
+}
+
+.hobbies-list li {
+	margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+	.about-me-content {
+		flex-direction: column;
+		align-items: center;
+		/* Center content horizontally */
+	}
+
+	.about-me-images {
+		padding-right: 0;
+		/* Remove right padding when images are stacked vertically */
+		max-width: 50%;
+		/* Allow image container to take up half the width */
+		margin: 0 auto;
+		/* Center the image container horizontally */
+	}
+
+	.about_me {
+		flex: 1;
+		/* Allow paragraph to take up more space when images are smaller */
+	}
+
+	.hobbies-skills {
+		flex-direction: column;
+	}
+
+	.hobbies-skills>section {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-me-content {
+		flex-direction: column;
+	}
+
+	.about-me-images {
+		padding-right: 0;
+		/* Remove right padding when images are stacked vertically */
+	}
+
+	.hobbies-skills {
+		flex-direction: column;
+	}
+
+	.hobbies-skills>section {
+		margin-bottom: 20px;
+	}
 }
