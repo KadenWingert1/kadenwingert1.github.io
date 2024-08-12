@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   // Cache section and button elements
   var sections = {
@@ -45,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function showSection(section, animationClass) {
     section.classList.add("visible-section", animationClass);
     section.classList.remove("hidden-section");
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   // Event listeners for buttons
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     showSection(sections.projects, "slide-in-right"); // Show projects with slide-in-right animation
   });
 
-    buttons.experience.addEventListener("click", function (event) {
+  buttons.experience.addEventListener("click", function (event) {
     event.preventDefault();
     hideAllSections();
     showSection(sections.experience, "tilt-in-fwd-tr"); // Show Experience with tilt-in-fwd-tr animation
