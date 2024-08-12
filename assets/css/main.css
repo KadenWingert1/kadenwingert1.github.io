@@ -2757,7 +2757,6 @@ body {
 
 /* Medium */
 
-#navPanel,
 #titleBar {
 	display: none;
 }
@@ -2785,10 +2784,6 @@ body {
 		padding: calc(14em + 44px) 0 14em 0;
 	}
 
-	/* Nav */
-	#nav {
-		display: none;
-	}
 
 	/* Sidebar */
 	.sidebar {
