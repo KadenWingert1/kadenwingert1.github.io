@@ -18,58 +18,61 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Selectors for sections and buttons
-  var aboutMeSection = document.querySelector("#about-me");
-  var projectsSection = document.querySelector("#projects");
-  var experienceSection = document.querySelector("#experience");
-  var bannerSection = document.querySelector("#banner");
+  // Cache section and button elements
+  var sections = {
+    aboutMe: document.querySelector("#about-me"),
+    projects: document.querySelector("#projects"),
+    experience: document.querySelector("#experience"),
+    banner: document.querySelector("#banner"),
+  };
 
-  var homeButton = document.querySelector("#nav ul li.current a");
-  var aboutMeButton = document.querySelector("#nav ul li:nth-child(2) a");
-  var projectsButton = document.querySelector("#nav ul li:nth-child(3) a");
-  var experienceButton = document.querySelector("#nav ul li:nth-child(4) a");
+  var buttons = {
+    home: document.querySelector("#nav ul li.current a"),
+    aboutMe: document.querySelector("#nav ul li:nth-child(2) a"),
+    projects: document.querySelector("#nav ul li:nth-child(3) a"),
+    experience: document.querySelector("#nav ul li:nth-child(4) a"),
+  };
 
-  // Function to hide all sections and the banner
+  // Function to hide all sections
   function hideAllSections() {
-    aboutMeSection.style.display = "none";
-    projectsSection.style.display = "none";
-    experienceSection.style.display = "none";
-    bannerSection.style.display = "none";
+    Object.values(sections).forEach(function (section) {
+      section.classList.add("hidden-section");
+      section.classList.remove("visible-section");
+    });
   }
 
-  // Function to show a specific section
-  function showSection(section) {
-    section.style.display = "block";
+  // Function to show a specific section with animation
+  function showSection(section, animationClass) {
+    section.classList.add("visible-section", animationClass);
+    section.classList.remove("hidden-section");
   }
 
-  // Event listeners for navigation buttons
-  homeButton.addEventListener("click", function (event) {
+  // Event listeners for buttons
+  buttons.home.addEventListener("click", function (event) {
     event.preventDefault();
     hideAllSections();
-    bannerSection.style.display = "block"; // Show the banner when Home is clicked
+    showSection(sections.banner, "roll-in-left"); // Show banner with roll-in-left animation
   });
 
-  aboutMeButton.addEventListener("click", function (event) {
+  buttons.aboutMe.addEventListener("click", function (event) {
     event.preventDefault();
     hideAllSections();
-    showSection(aboutMeSection);
+    showSection(sections.aboutMe, "slide-in-bottom"); // Show about-me with slide-in-bottom animation
   });
 
-  projectsButton.addEventListener("click", function (event) {
+  buttons.projects.addEventListener("click", function (event) {
     event.preventDefault();
     hideAllSections();
-    showSection(projectsSection);
+    showSection(sections.projects, "slide-in-right"); // Show projects with slide-in-right animation
   });
 
-  experienceButton.addEventListener("click", function (event) {
+    buttons.experience.addEventListener("click", function (event) {
     event.preventDefault();
     hideAllSections();
-    showSection(experienceSection);
+    showSection(sections.experience, "tilt-in-fwd-tr"); // Show Experience with tilt-in-fwd-tr animation
   });
 
-  // Initially hide all sections except the banner
+  // Initially show banner section only
   hideAllSections();
-  bannerSection.style.display = "block"; // Initially show the banner
+  showSection(sections.banner, "roll-in-left");
 });
-
-
