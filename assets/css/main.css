@@ -2141,8 +2141,8 @@ ul.special li a:before {
 ul.special li:hover a:before {
 	background: #b9d2ce;
 }
-.bounceElement{
-}
+
+.bounceElement {}
 
 /* Menu */
 
@@ -3037,13 +3037,8 @@ body {
 		margin-top: 0;
 	}
 
-	/* Special */
-	ul.special {
-		margin: -0.75em 0 2em -0.75em;
-	}
-
 	ul.special li {
-		padding: 0.75em 0 0 0.75em;
+		padding: 0 !important;
 	}
 
 	ul.special li a:before {
@@ -3228,12 +3223,12 @@ body {
 }
 
 ul.special li {
-	margin: 10px;
 	text-align: center;
+	padding: 1em;
 }
 
 .box.feature i {
-	font-size: 5em;
+	font-size: 3em;
 }
 
 ul.special li i {
@@ -3540,6 +3535,7 @@ ul.project-skills-used li {
 	height: 1.75%;
 	padding: .5em;
 	border-radius: .25em;
+
 }
 
 /*image gallery*/
@@ -3879,11 +3875,16 @@ ul.experience-list li .descr::before {
 	display: none;
 }
 
+#about-me {
+	margin-bottom: 0;
+}
+
 /* Container for the whole section */
 .about-me-container {
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
+	padding-bottom: 0;
 	/* Add padding around the entire section */
 }
 
@@ -3893,6 +3894,7 @@ ul.experience-list li .descr::before {
 	flex-direction: row;
 	align-items: flex-start;
 	padding: 2em;
+	padding-bottom: 0%;
 	/* Center content and adjust vertical spacing */
 	font-family: "Poppins", sans-serif;
 	/* Limit max width for better layout on large screens */
@@ -3911,6 +3913,7 @@ ul.experience-list li .descr::before {
 	max-width: 450px;
 	/* Limit image container width */
 	margin: 0 auto;
+	padding-bottom: 5%;
 }
 
 /* Style for images */
@@ -3925,8 +3928,8 @@ ul.experience-list li .descr::before {
 .hobbies-skills {
 	display: flex;
 	flex-direction: row;
-	gap: 20px;
-	margin-top: 2em;
+	gap: 2em;
+
 	/* Add top margin for spacing */
 }
 
@@ -3971,9 +3974,6 @@ ul.experience-list li .descr::before {
 		flex-direction: column;
 	}
 
-	.hobbies-skills>section {
-		margin-bottom: 20px;
-	}
 }
 
 @media (max-width: 768px) {
@@ -3990,7 +3990,7 @@ ul.experience-list li .descr::before {
 		flex-direction: column;
 	}
 
-	.hobbies-skills>section {
-		margin-bottom: 20px;
+	.skill_icons{
+		padding-top: 3em;
 	}
 }
