@@ -330,6 +330,7 @@ header>p {
 	max-width: 100%;
 	width: 64em;
 }
+
 /* circle */
 ul.experience-list li .date::after {
 	content: "";
@@ -378,13 +379,16 @@ ul.experience-list li .date::after {
 	}
 
 }
+
 @media screen and (max-width: 560px) {
+
 	/* circle */
 	ul.experience-list li .date::after {
 		right: calc((100% + var(--col-gap) + var(--line-w) / 2) - 4.1%);
 	}
 
 }
+
 @media screen and (max-width: 736px) {
 
 	.container {
@@ -3172,26 +3176,18 @@ body {
 
 .sport-button {
 	display: inline-block;
-	padding: 10px 20px;
-	margin: 10px;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
 	text-decoration: none;
-	cursor: pointer;
-	border-radius: 5px;
-	transition: background-color 0.3s ease;
-}
-
-.sport-button {
 	padding: 0.5em 1em;
 	background-color: #0ebac5;
 	border: none;
+	border-radius: 5px;
 	user-select: none;
 	cursor: pointer;
+	font-weight: bold;
 	font-size: 20px;
 	text-transform: uppercase;
 	transition: all 0.5s linear;
+	margin: 10px;
 	color: #fff;
 	position: relative;
 	box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -3200,7 +3196,6 @@ body {
 .sport-button:hover::after,
 .sport-button:hover::before {
 	content: '';
-	background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -3211,7 +3206,6 @@ body {
 }
 
 .sport-button:hover::before {
-	background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 	inset: 0;
 	animation: move-left-side 1s ease infinite;
 	z-index: -2;
