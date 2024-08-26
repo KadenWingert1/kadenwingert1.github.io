@@ -34,9 +34,15 @@
       <div class="progress-container fixed-top">
         <span class="progress-bar"></span>
       </div>
-      <button class="colorToggle" onclick="toggleColorMode()">
-        Toggle dark mode
-      </button>
+
+      <div >
+        <input type="checkbox" class="checkbox" id="checkbox" onclick="toggleColorMode()"/>
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
 
       <!-- Main -->
       <div id="main" class="light-mode">
@@ -225,8 +231,8 @@
                       class="project-overlay animate__animated animate__zoomIn animate__slideInLeft"
                     ></div>
                     <h3 class="card_heading project-card-text">Sport Sphere</h3>
-                  </div> </a
-                >
+                  </div>
+                </a>
               </div>
 
               <div class="project-iten">

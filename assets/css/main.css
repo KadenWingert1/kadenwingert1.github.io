@@ -2442,46 +2442,89 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	cursor: default;
+	display: flex;
+	justify-content: center;
+	/* Center the nav items */
+	align-items: center;
+	padding: 0 1em;
+	/* Add some padding to the sides */
+	box-sizing: border-box;
+	/* Ensure padding doesn't break the layout */
 }
 
-
 #nav ul {
-	position: relative;
-	z-index: 1001;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	/* Center the nav items */
+	flex-wrap: wrap;
+	/* Allow wrapping on very small screens */
 }
 
 #nav li {
 	display: inline-block;
-	top: 0;
 	position: relative;
-	-moz-transition: top .15s ease-in-out;
-	-webkit-transition: top .15s ease-in-out;
-	-o-transition: top .15s ease-in-out;
-	-ms-transition: top .15s ease-in-out;
 	transition: top .15s ease-in-out;
-}
-
-#nav li>ul {
-	display: none;
 }
 
 #nav li a,
 #nav li span {
-	-moz-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-	-webkit-transition: background-color .075s ease-in-out, color .075s ease-in-out;
-	-ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
 	transition: background-color .075s ease-in-out, color .075s ease-in-out;
 	position: relative;
 	text-decoration: none;
 	color: #6b7770;
-	padding: 1em 1.5em 1em 1.5em;
+	padding: 1em 1.5em;
 	outline: 0;
+	display: block;
+}
+
+#nav li:hover a,
+#nav li:hover span {
+	background: #C1CAC5;
+	color: #fff;
+}
+
+#nav li.active a,
+#nav li.active span {
+	background: #C1CAC5;
+	color: #fff;
 }
 
 .navClass {
-	display: inline;
 	padding: 0;
 	margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	#nav {
+		height: auto;
+		line-height: normal;
+	}
+
+	#nav li a,
+	#nav li span {
+		padding: 0.75em 1em;
+		font-size: 0.9em;
+		/* Adjust font size */
+	}
+}
+
+@media (max-width: 480px) {
+	#nav {
+		height: auto;
+		line-height: normal;
+		padding: 0.5em 0.5em;
+	}
+
+	#nav li a,
+	#nav li span {
+		padding: 0.5em 0.75em;
+		font-size: 0.8em;
+		/* Further reduce font size */
+	}
 }
 
 #nav li:hover a,
@@ -2983,6 +3026,10 @@ body {
 		padding: 1em 0 1em 0;
 	}
 
+	.fixed-top {
+		top: 2.65em;
+	}
+
 }
 
 /* Small */
@@ -3112,7 +3159,7 @@ body {
 
 	.fixed-top {
 		position: fixed;
-		top: 3.3em;
+		top: 2.65em;
 		right: 0;
 		left: 0;
 	}
@@ -3379,6 +3426,7 @@ ul.special li i {
 .project-title {
 	font-size: 4em;
 }
+
 .project-description {
 	color: #000;
 }
@@ -3518,7 +3566,6 @@ label {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	transition: all .3s ease-in;
-	opacity: 0;
 }
 
 .close {
@@ -4153,15 +4200,6 @@ ul.experience-list li .descr::before {
 	}
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-	.navbar {
-		flex-direction: column;
-		/* Stacks navbar items vertically on smaller screens */
-		align-items: center;
-	}
-}
-
 .progress-container {
 	width: 100%;
 	background-color: transparent;
@@ -4179,17 +4217,57 @@ ul.experience-list li .descr::before {
 .fixed-top {
 	position: fixed;
 	z-index: 10;
+
 }
 
-.colorToggle {
-	position: fixed;
-	margin: 1em;
-	z-index: 10;
+
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+	z-index: 100;
+}
+
+.checkbox-label {
+	background-color: #111;
+	width: 50px;
+	height: 26px;
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+.checkbox-label .ball {
+	background-color: #fff;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+	transform: translateX(24px);
 }
 
 #banner {
 	background-image: url("../../images/darkbackground.avif");
 }
+
 .light-mode #page-wrapper,
 .light-mode #page-wrapper #main #banner,
 .light-mode #page-wrapper #main #banner .content h2,
@@ -4207,7 +4285,7 @@ ul.experience-list li .descr::before {
 }
 
 
-.light-mode #page-wrapper #main #banner{
+.light-mode #page-wrapper #main #banner {
 	background-image: none;
 }
 
