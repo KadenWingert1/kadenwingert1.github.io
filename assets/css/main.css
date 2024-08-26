@@ -2560,7 +2560,7 @@ body {
 /* Banner */
 
 #banner {
-		background-color: #000;
+	background-color: #000;
 	position: relative;
 	background-position: top left, top left, center center;
 	background-repeat: repeat, repeat, no-repeat;
@@ -2568,6 +2568,7 @@ body {
 	z-index: 1;
 	padding: 7em 0;
 }
+
 
 #banner .content {
 	position: relative;
@@ -2580,7 +2581,7 @@ body {
 }
 
 #banner .content h2 {
-	color: #dedede;
+	color: white;
 	font-size: 2.75em;
 	margin: 0 0 0.5em 0;
 }
@@ -2642,7 +2643,7 @@ body {
 }
 
 #footer a {
-	color: inherit;
+	color: transparent;
 }
 
 
@@ -4163,4 +4164,9 @@ ul.experience-list li .descr::before {
 .fixed-top {
 	position: fixed;
 	z-index: 10;
+}
+
+.light-mode {
+	background-color: #f2f5f3;
+	color: #f2f5f3;
 }

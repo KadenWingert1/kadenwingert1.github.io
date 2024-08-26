@@ -62,3 +62,8 @@ window.addEventListener("scroll", function () {
   // Update the width of the progress bar
   document.querySelector(".progress-bar").style.width = `${scrollPercentage}%`;
 });
+
+function toggleColorMode() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
