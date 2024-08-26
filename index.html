@@ -34,35 +34,37 @@
       <div class="progress-container fixed-top">
         <span class="progress-bar"></span>
       </div>
-      <button onclick="toggleColorMode()">Toggle dark mode</button>
+      <button class="colorToggle" onclick="toggleColorMode()">
+        Toggle dark mode
+      </button>
 
-      <!-- Banner -->
-      <section id="banner" class="light-mode">
-        <div class="banner-container">
-          <div class="profile-image-container">
-            <img
-              src="images/kaden/kaden.png"
-              alt="Kaden Wingert"
-              class="profile-image"
-            />
-          </div>
-          <div class="content profile">
-            <h2>Kaden Wingert</h2>
-            <p>Software Engineer</p>
-            <a
-              href="https://docs.google.com/document/d/1VnyDYstrk3nlJ9rJOpMFNBnl9n1RZdNQBWAmZ2gRYFE/export?format=pdf"
-              class="button scrolly"
-              ><i class="fa fa-download"></i> Download Resume</a
-            >
-          </div>
-        </div>
-      </section>
       <!-- Main -->
-      <section id="main">
+      <div id="main" class="light-mode">
+        <!-- Banner -->
+        <section id="banner" class="light-mode">
+          <div class="banner-container">
+            <div class="profile-image-container">
+              <img
+                src="images/kaden/kaden.png"
+                alt="Kaden Wingert"
+                class="profile-image"
+              />
+            </div>
+            <div class="content profile">
+              <h2 class="light-mode">Kaden Wingert</h2>
+              <p>Software Engineer</p>
+              <a
+                href="https://docs.google.com/document/d/1VnyDYstrk3nlJ9rJOpMFNBnl9n1RZdNQBWAmZ2gRYFE/export?format=pdf"
+                class="button scrolly light-mode"
+                ><i class="fa fa-download"></i> Download Resume</a
+              >
+            </div>
+          </div>
+        </section>
         <!-- Highlight -->
-        <section id="about-me" class="hidden-section">
-          <div class="about-me-container">
-            <h2 class="major"><span>About Me</span></h2>
+        <section id="about-me" class="hidden-section light-mode">
+          <div class="about-me-container light-mode">
+            <h2 class="major"><span class="light-mode">About Me</span></h2>
             <!-- About Me Section -->
             <div class="about-me-content">
               <div class="about-me-images">
@@ -73,7 +75,7 @@
                 />
               </div>
               <div class="about-me-text">
-                <p class="about_me">
+                <p class="about_me light-mode">
                   Hello! I'm Kaden Wingert, a senior at Iowa State University
                   studying software engineering. My fascination with technology
                   began early and was solidified through my role as a Technology
@@ -207,10 +209,10 @@
 
         <!-- Features -->
         <section id="projects" class="hidden-section">
-          <h2 class="major"><span>Projects</span></h2>
-          <div>
-            <div class="row project-row">
-              <div class="col-4">
+          <div class="projects-container">
+            <h2 class="major"><span>Projects</span></h2>
+            <div class="projects-box">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/sportsphere.html" class="project-card">
                   <div class="box feature">
@@ -223,11 +225,11 @@
                       class="project-overlay animate__animated animate__zoomIn animate__slideInLeft"
                     ></div>
                     <h3 class="card_heading project-card-text">Sport Sphere</h3>
-                  </div>
-                </a>
+                  </div> </a
+                >
               </div>
 
-              <div class="col-4">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/bargainBuddy.html" class="project-card">
                   <div class="box feature">
@@ -245,7 +247,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-4">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/workforcenavigator.html" class="project-card">
                   <div class="box feature">
@@ -263,10 +265,8 @@
                   </div>
                 </a>
               </div>
-            </div>
 
-            <div class="row project-row">
-              <div class="col-4">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/nordlandforge.html" class="project-card">
                   <div class="box feature">
@@ -283,7 +283,7 @@
                 </a>
               </div>
 
-              <div class="col-4">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/pokemon.html" class="project-card">
                   <div class="box feature pokemon">
@@ -299,7 +299,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-4">
+              <div class="project-iten">
                 <!-- Feature -->
                 <a href="Projects/typingGame.html" class="project-card">
                   <div class="box feature">
@@ -318,7 +318,7 @@
             </div>
           </div>
         </section>
-        <section id="experience" class="hidden-section">
+        <section id="experience" class="hidden-section light-mode">
           <h2 class="major"><span>Experience</span></h2>
           <div class="experience container">
             <ul class="experience-list">
@@ -326,8 +326,8 @@
                 <div class="date timeline" style="font-size: 17px">
                   Principal Financial Group, Software Engineer Intern
                 </div>
-                <div class="title timeline">May 2024 - Present</div>
-                <div class="descr timeline">
+                <div class="title timeline light-mode">May 2024 - Present</div>
+                <div class="descr timeline light-mode">
                   During my internship at Principal Financial, I had the
                   opportunity to work on several impactful projects. One of my
                   key responsibilities was migrating an event-routing
@@ -442,7 +442,7 @@
             </ul>
           </div>
         </section>
-      </section>
+      </div>
 
       <!-- Footer -->
       <footer id="footer">
