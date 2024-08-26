@@ -2452,7 +2452,6 @@ body {
 
 #nav li {
 	display: inline-block;
-	margin: 0 0.5em 0 0.5em;
 	top: 0;
 	position: relative;
 	-moz-transition: top .15s ease-in-out;
@@ -2473,19 +2472,16 @@ body {
 	-ms-transition: background-color .075s ease-in-out, color .075s ease-in-out;
 	transition: background-color .075s ease-in-out, color .075s ease-in-out;
 	position: relative;
-	display: block;
 	text-decoration: none;
 	color: #6b7770;
-	top: -6px;
-	padding: 6px 1.5em 0.25em 1.5em;
-	border-bottom-left-radius: 6px;
-	border-bottom-right-radius: 6px;
+	padding: 1em 1.5em 1em 1.5em;
 	outline: 0;
 }
 
-#nav li:hover,
-#nav li.active {
-	top: 3px;
+.navClass {
+	display: inline;
+	padding: 0;
+	margin: 0;
 }
 
 #nav li:hover a,
@@ -2497,11 +2493,6 @@ body {
 #nav li.active a,
 #nav li.active span {
 	background: #C1CAC5;
-	color: #fff;
-}
-
-#nav li.current a {
-	background: #b1ddab;
 	color: #fff;
 }
 
@@ -3006,6 +2997,7 @@ body {
 
 	h2.major {
 		font-size: 1.25em;
+		margin-top: 5em;
 	}
 
 	/* Section/Article */
@@ -3111,6 +3103,15 @@ body {
 		padding-left: 0;
 		line-height: 1.75em;
 	}
+
+	.fixed-top {
+		position: fixed;
+		top: 3.3em;
+		right: 0;
+		left: 0;
+	}
+
+
 
 }
 
@@ -3874,7 +3875,7 @@ ul.experience-list li .descr::before {
 .about-me-container {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+
 	padding-bottom: 0;
 	/* Add padding around the entire section */
 }
@@ -4138,4 +4139,23 @@ ul.experience-list li .descr::before {
 		/* Stacks navbar items vertically on smaller screens */
 		align-items: center;
 	}
+}
+
+.progress-container {
+	width: 100%;
+	background-color: transparent;
+	height: 5px;
+	display: block;
+}
+
+.progress-bar {
+	background-color: #0ebac5;
+	width: 0%;
+	display: block;
+	height: inherit;
+}
+
+.fixed-top {
+	position: fixed;
+	z-index: 10;
 }
