@@ -2561,6 +2561,8 @@ body {
 
 #banner {
 	background-color: #000;
+	background-image: url('../../images/darkbackground.avif');
+	z-index: 0;
 	position: relative;
 	background-position: top left, top left, center center;
 	background-repeat: repeat, repeat, no-repeat;
@@ -2578,6 +2580,7 @@ body {
 	text-align: center;
 	margin: 0;
 	padding: 4em 0 3.5em 0;
+	z-index: 100;
 }
 
 #banner .content h2 {
@@ -2602,7 +2605,7 @@ body {
 	-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
 	-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
 	transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	color: #8c0c0c;
+	color: #26988e;
 	background: transparent;
 	border: solid 4px #575d59;
 	border-color: rgba(87, 93, 89, 0.35);
@@ -3249,11 +3252,11 @@ ul.special li i {
 
 
 .col-4 {
-	flex-wrap:wrap;
-		/* Grow, shrink, and set the basis to 30% of the container's width */
-		box-sizing: border-box;
-		/* Ensures padding and border are included in the width */
-		margin-bottom: 10px;
+	flex-wrap: wrap;
+	/* Grow, shrink, and set the basis to 30% of the container's width */
+	box-sizing: border-box;
+	/* Ensures padding and border are included in the width */
+	margin-bottom: 10px;
 }
 
 .col-4.smaller-card {
@@ -3342,6 +3345,7 @@ ul.special li i {
 	flex-direction: column;
 	padding-bottom: 0;
 }
+
 .projects-box {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -3358,7 +3362,6 @@ ul.special li i {
 	flex-direction: row;
 	padding: 5%;
 	padding-top: 2%;
-	border-top: solid 10px;
 }
 
 #main.projects-main.pokemon {
@@ -3375,6 +3378,9 @@ ul.special li i {
 
 .project-title {
 	font-size: 4em;
+}
+.project-description {
+	color: #000;
 }
 
 .project-container1 {
@@ -3397,7 +3403,7 @@ ul.special li i {
 	justify-content: space-around;
 	align-self: center;
 	flex: 90%;
-	padding: 4%;
+
 
 }
 
@@ -3412,13 +3418,13 @@ ul.special li i {
 
 .bargainBuddy .feature-text {
 	text-align: center;
-	padding-top: 20%;
 	/* Increase the margin to lower the text */
 	font-size: 40px;
 	/* Increase the font size */
 	position: relative;
 	color: #0066cc;
 	font-weight: 100;
+	background-color: white;
 }
 
 .bargainBuddy .feature-text::after {
@@ -3427,7 +3433,6 @@ ul.special li i {
 }
 
 .bargainBuddy .feature {
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	border-radius: 4%;
 }
 
@@ -3555,6 +3560,7 @@ ul.project-skills-used {
 	padding-top: 6%;
 	display: flex;
 	flex-wrap: wrap;
+	color: #000;
 }
 
 ul.project-skills-used li {
@@ -3591,15 +3597,12 @@ ul.project-skills-used li {
 }
 
 .nordlandForge .image-holder {
-	background-size: contain;
-	background-position: center top;
-	background-repeat: no-repeat;
+
 	margin-bottom: 0;
 	padding-bottom: 50%;
 }
 
 .pokemon .image-holder {
-	background-size: contain;
 	background-position: center top;
 	background-repeat: no-repeat;
 	margin-bottom: 0;
@@ -3631,9 +3634,11 @@ ul.project-skills-used li {
 }
 
 .image-holder {
+	background-position-x: center;
 	background-size: contain;
-	background-position: center bottom;
 	background-repeat: no-repeat;
+	background-color: #000000;
+
 }
 
 .gallery-wrapper {
@@ -3707,12 +3712,11 @@ ul.project-skills-used li {
 }
 
 .featured-item {
-	border-radius: 10px;
-	align-self: baseline;
+	background-color: #000;
+	align-self: center;
 }
 
 .featured-item.bargainBuddy.image-holder.r-3-2.transition {
-	border-radius: 10px;
 	align-self: baseline;
 	padding-bottom: 70%;
 }
@@ -4183,21 +4187,33 @@ ul.experience-list li .descr::before {
 	z-index: 10;
 }
 
-
-.light-mode #main #banner,
-.light-mode #main #banner .content h2,
-.light-mode #main #about-me .about_me,
-.light-mode #main #about-me .about-me-container,
-.light-mode #main h2.major span,
-.light-mode #main,
-.light-mode #main .project-card-text,
-.light-mode #main #experience,
-.light-mode #main #experience .title.timeline,
-.light-mode #main #experience .descr.timeline {
+#banner {
+	background-image: url("../../images/darkbackground.avif");
+}
+.light-mode #page-wrapper,
+.light-mode #page-wrapper #main #banner,
+.light-mode #page-wrapper #main #banner .content h2,
+.light-mode #page-wrapper #main #about-me .about_me,
+.light-mode #page-wrapper #main #about-me .about-me-container,
+.light-mode #page-wrapper #main h2.major span,
+.light-mode #page-wrapper #main,
+.light-mode #page-wrapper #main .project-card-text,
+.light-mode #page-wrapper #main #experience,
+.light-mode #page-wrapper #main #experience .title.timeline,
+.light-mode #page-wrapper #main #experience .descr.timeline,
+.light-mode #page-wrapper #footer {
 	background-color: #f2f5f3;
 	color: #000000;
 }
 
+
+.light-mode #page-wrapper #main #banner{
+	background-image: none;
+}
+
+
+#footer,
+body,
 .light-mode #main #banner .content .button:hover {
 	background-color: black;
 	color: #f2f5f3;
