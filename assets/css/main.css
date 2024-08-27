@@ -361,6 +361,10 @@ ul.experience-list li .date::after {
 		width: calc(100% - 100px);
 	}
 
+	#footer {
+		padding: 2em 0 2em 0;
+	}
+
 }
 
 @media screen and (max-width: 980px) {
@@ -2611,8 +2615,9 @@ body {
 	background-repeat: repeat, repeat, no-repeat;
 	background-size: auto, auto, cover;
 	padding: 7em 0;
+	margin-top: -7em;
 	height: 100%;
-	margin: 0;
+	margin-top: -2em;
 }
 
 #banner .content {
@@ -2628,7 +2633,7 @@ body {
 
 #banner .content h2 {
 	color: white;
-	background-color: #000000;
+	background-color: transparent;
 	font-size: 2.75em;
 	margin: 0 0 0.5em 0;
 }
@@ -2773,15 +2778,6 @@ body {
 		font-size: 1.5em;
 	}
 
-	/* Banner */
-	#banner {
-		padding: 6em 0;
-	}
-
-	#banner .content {
-		padding: 4em 0 3em 0;
-	}
-
 	#banner .content h2 {
 		margin: 0 0 0.65em 0;
 	}
@@ -2792,7 +2788,7 @@ body {
 
 	/* Footer */
 	#footer {
-		padding: 6em 0 6em 0;
+		padding: 0em 0 2em 0;
 	}
 
 }
@@ -3023,7 +3019,7 @@ body {
 	}
 
 	#footer {
-		padding: 1em 0 1em 0;
+		padding: 2em 0 2em 0;
 	}
 
 	.fixed-top {
@@ -3146,7 +3142,7 @@ body {
 
 	/* Footer */
 	#footer {
-		padding: 3em 0;
+		padding: 2em 0 2em 0;
 	}
 
 	/* Copyright */
@@ -3163,6 +3159,12 @@ body {
 		right: 0;
 		left: 0;
 	}
+
+		@media screen and (max-width: 1680px) {
+			#footer{
+				
+			}
+		}
 
 
 
@@ -3219,7 +3221,7 @@ body {
 	padding-right: 2.5%;
 	color: #f2f5f3;
 	background-color: #000;
-	/* Start with black background */
+
 }
 
 
@@ -4221,25 +4223,27 @@ ul.experience-list li .descr::before {
 }
 
 
-
 .checkbox {
 	opacity: 0;
 	position: absolute;
-	z-index: 100;
 }
 
 .checkbox-label {
+	top: 3em;
+	left: 5em;
 	background-color: #111;
-	width: 50px;
-	height: 26px;
+	width: 66px;
+	height: 34.6px;
 	border-radius: 50px;
 	position: relative;
-	padding: 5px;
+	padding: 6.6px;
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 2;
 }
+
 
 .fa-moon {
 	color: #f1c40f;
@@ -4251,21 +4255,38 @@ ul.experience-list li .descr::before {
 
 .checkbox-label .ball {
 	background-color: #fff;
-	width: 22px;
-	height: 22px;
+	width: 29.3px;
+	height: 29.3px;
 	position: absolute;
-	left: 2px;
-	top: 2px;
+	left: 2.6px;
+	top: 2.6px;
 	border-radius: 50%;
 	transition: transform 0.2s linear;
 }
 
 .checkbox:checked+.checkbox-label .ball {
-	transform: translateX(24px);
+	transform: translateX(32px);
+}
+
+@media screen and (max-width: 360px) {
+	.checkbox-label {
+		top: 60px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.checkbox-label {
+		top: 80px;
+	}
 }
 
 #banner {
 	background-image: url("../../images/darkbackground.avif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
 }
 
 .light-mode #page-wrapper,
@@ -4281,7 +4302,7 @@ ul.experience-list li .descr::before {
 .light-mode #page-wrapper #main #experience .descr.timeline,
 .light-mode #page-wrapper #footer {
 	background-color: #f2f5f3;
-	color: #000000;
+	color: #080609;
 }
 
 
