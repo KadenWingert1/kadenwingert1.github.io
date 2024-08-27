@@ -2499,6 +2499,7 @@ body {
 .navClass {
 	padding: 0;
 	margin: 0;
+	height: fit-content;
 }
 
 /* Responsive Adjustments */
@@ -2943,7 +2944,7 @@ body {
 
 	#navPanel nav {
 		position: relative;
-		z-index: 1000;
+		z-index: 100;
 	}
 
 	#navpanel,
@@ -4281,6 +4282,9 @@ ul.experience-list li .descr::before {
 		top: 80px;
 	}
 }
+#footer{
+	padding: 0 0 6em 0;
+}
 
 #banner {
 	background-image: url("../../images/darkbackground.avif");
@@ -4312,8 +4316,7 @@ ul.experience-list li .descr::before {
 
 
 #footer,
-body,
-.light-mode #main #banner .content .button:hover {
+body {
 	background-color: black;
 	color: #f2f5f3;
 }
