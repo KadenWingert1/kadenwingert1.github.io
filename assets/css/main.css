@@ -2627,9 +2627,6 @@ body {
 }
 
 #banner .content .button {
-	-moz-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	-webkit-transition: border-color .2s ease-in-out, color .2s ease-in-out;
-	-ms-transition: border-color .2s ease-in-out, color .2s ease-in-out;
 	transition: border-color .2s ease-in-out, color .2s ease-in-out;
 	color: #26988e;
 	background: transparent;
@@ -4310,11 +4307,14 @@ ul.experience-list li .descr::before {
 .light-mode #page-wrapper #main #banner {
 	background-image: none;
 }
-.light-mode #page-wrapper #main .project-card{
+ 
+.light-mode #page-wrapper #main .project-card {
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-
+.light-mode #page-wrapper #main #banner .content .button:hover{
+	background-color: black;
+}
 #footer,
 body {
 	background-color: black;
