@@ -123,6 +123,12 @@ document.addEventListener("DOMContentLoaded", function () {
         baseURL + "workforcenavigator/summary.png",
         baseURL + "workforcenavigator/timeOff.png",
       ];
+    } else if (currentPage.includes("groupTab")) {
+      images = [
+        baseURL + "groupTab/mainScreen.png",
+        baseURL + "groupTab/NewGroup.png",
+        baseURL + "groupTab/SingleGroup.png",
+      ];
     } else if (currentPage.includes("nordlandforge")) {
       images = [
         baseURL + "nordlandForge/home-page.png",
@@ -149,10 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
         baseURL + "typingGame/end.png",
       ];
     } else if (currentPage.includes("bargainBuddy")) {
-      images = [
-        baseURL + "BargainBuddy/bargainBuddy.png",
-
-      ];
+      images = [baseURL + "BargainBuddy/bargainBuddy.png"];
     } else {
       // Default images for other pages
       images = [];
