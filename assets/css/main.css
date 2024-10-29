@@ -2650,7 +2650,6 @@ body {
 /* Main */
 #main {
 	background: #000000;
-
 }
 
 
@@ -3768,7 +3767,6 @@ ul.project-skills-used li {
 /*end image gallery*/
 
 #experience {
-	--color: rgb(255, 255, 255);
 	--bgColor: rgb(0, 0, 0);
 	min-height: 100vh;
 	align-content: center;
@@ -4301,15 +4299,23 @@ ul.experience-list li .descr::before {
 .light-mode #page-wrapper #main h2.major span,
 .light-mode #page-wrapper #main,
 .light-mode #page-wrapper #main .project-card-text,
-.light-mode #page-wrapper #main #experience .title.timeline,
 .light-mode #page-wrapper #main #experience .descr.timeline,
+.light-mode #page-wrapper #main #experience .title.timeline,
 .light-mode #page-wrapper #footer {
 	background-color: #f2f5f3;
 	color: #080609;
 }
 
+.light-mode #page-wrapper #main #experience .descr.timeline{
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		/* Adds a soft shadow */
+		padding: 16px;
+		/* Space inside the shadowed box */
+		border-radius: 8px;
+}
+
 .light-mode #page-wrapper #main #experience {
-	background-color: white;
+	background-color: #f2f5f3;
 }
 .light-mode #page-wrapper #main ul.experience-list li .date::after {
 	background: white;
