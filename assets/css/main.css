@@ -2132,8 +2132,6 @@ ul.special li:hover a:before {
 	background: #b9d2ce;
 }
 
-.bounceElement {}
-
 /* Menu */
 
 ul.menu {
@@ -3134,11 +3132,6 @@ body {
 		right: 0;
 		left: 0;
 	}
-
-	@media screen and (max-width: 1680px) {
-		#footer {}
-	}
-
 
 
 }

@@ -1,0 +1,59 @@
+# --- Operating System Files ---
+.DS_Store          # macOS folder attributes
+Thumbs.db          # Windows thumbnail cache
+desktop.ini        # Windows folder customizations
+
+# --- IDE & Editor Files ---
+.vscode/           # VS Code settings
+.idea/             # JetBrains IDE (WebStorm, PyCharm, etc.)
+*.swp              # Vim swap files
+*.swo
+
+# --- Dependency Directories ---
+node_modules/      # Node.js dependencies
+venv/              # Python virtual environment
+.env               # Environment variables
+.env.local         # Local overrides
+.env.development
+.env.production
+
+# --- Build & Log Files ---
+dist/              # Built/compiled files
+build/             # React/Vue build output
+*.log              # Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Testing & Coverage ---
+coverage/          # Test coverage reports
+.nyc_output/       # NYC coverage tool
+
+# --- System Files ---
+*.bak              # Backup files
+*.tmp              # Temporary files
+*.pid              # Process ID files
+
+# --- Language-Specific ---
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.so
+.Python
+
+# Ruby
+*.gem
+.bundle/
+
+# Java
+*.class
+*.war
+*.ear
+
+# --- Database ---
+*.sqlite           # SQLite databases
+*.db               # Generic databases
+.DS_Store
+.DS_Store
+assets/.DS_Store
