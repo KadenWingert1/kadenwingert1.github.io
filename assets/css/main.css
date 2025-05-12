@@ -3151,7 +3151,8 @@ body {
 }
 
 .profile-image {
-	border-radius: 100%;
+	border-radius: 50%;
+	height: 27rem;
 }
 
 .banner-container {

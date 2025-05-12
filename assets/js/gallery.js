@@ -129,13 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
         baseURL + "groupTab/NewGroup.png",
         baseURL + "groupTab/SingleGroup.png",
       ];
-    } else if (currentPage.includes("SecureStorage")) {
-      images = [
-        baseURL + "secureStorage/home.png",
-        baseURL + "secureStorage/awsDiagram.png",
-        baseURL + "secureStorage/home.png",
-        baseURL + "secureStorage/awsDiagram.png",
-      ];
     } else if (currentPage.includes("nordlandforge")) {
       images = [
         baseURL + "nordlandForge/home-page.png",
