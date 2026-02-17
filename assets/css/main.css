@@ -3414,6 +3414,7 @@ ul.special li i {
 
 .project-title {
 	font-size: 4em;
+	color: #000;
 }
 
 .project-description {
@@ -3806,6 +3807,128 @@ ul.experience-list li {
 	grid-row: span 2;
 	display: grid;
 	grid-template-rows: min-content min-content min-content;
+}
+
+/* Improved date styling for multi-line text */
+ul.experience-list li .date {
+	--dateH: auto; /* Change from fixed height to auto */
+	min-height: 3rem; /* Minimum height */
+	height: auto;
+	padding: 0.75rem 1.5rem; /* Add padding for better text spacing */
+	margin-inline: calc(var(--inlineP) * -1);
+
+	text-align: center;
+	background-color: var(--accent-color);
+	color: white;
+	font-size: clamp(0.9rem, 2vw, 1.25rem); /* Responsive font size */
+	font-weight: 700;
+	line-height: 1.4; /* Better line height for multi-line text */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	word-break: break-word; /* Prevent overflow */
+	hyphens: auto; /* Add hyphens when needed */
+
+	border-radius: calc(3rem / 2) 0 0 calc(3rem / 2);
+}
+
+/* Adjust for odd items */
+@media (min-width: 40rem) {
+	ul.experience-list li:nth-child(odd) .date {
+		border-radius: 0 calc(3rem / 2) calc(3rem / 2) 0;
+	}
+}
+
+/* Date flap - needs adjustment for auto height */
+ul.experience-list li .date::before {
+	content: "";
+	width: var(--inlineP);
+	aspect-ratio: 1;
+	background: var(--accent-color);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+	position: absolute;
+	top: 100%;
+	clip-path: polygon(0 0, 100% 0, 0 100%);
+	right: 0;
+}
+
+/* For odd items, flip the flap */
+@media (min-width: 40rem) {
+	ul.experience-list li:nth-child(odd) .date::before {
+		clip-path: polygon(0 0, 100% 0, 100% 100%);
+		left: 0;
+		right: auto;
+	}
+}
+
+/* Responsive font sizes for different screen sizes */
+@media screen and (max-width: 1280px) {
+	ul.experience-list li .date {
+		font-size: clamp(0.85rem, 1.8vw, 1.1rem);
+		padding: 0.6rem 1.2rem;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	ul.experience-list li .date {
+		font-size: clamp(0.8rem, 1.6vw, 1rem);
+		padding: 0.5rem 1rem;
+	}
+	
+	/* Adjust circle position for smaller screens */
+	ul.experience-list li .date::after {
+		width: 1.75rem;
+		height: 1.75rem;
+		border-width: 0.25rem;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	ul.experience-list li .date {
+		font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+		padding: 0.4rem 0.8rem;
+		min-height: 2.5rem;
+	}
+	
+	ul.experience-list li .date::after {
+		width: 1.5rem;
+		height: 1.5rem;
+		border-width: 0.2rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	ul.experience-list li .date {
+		font-size: 0.8rem;
+		padding: 0.4rem 0.6rem;
+		white-space: normal; /* Allow wrapping */
+		line-height: 1.3;
+	}
+}
+
+/* Alternative: Truncate with ellipsis if you prefer that approach */
+ul.experience-list li .date.truncate {
+	--dateH: 3rem;
+	height: var(--dateH);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	line-height: 3rem; /* Match height */
+	padding: 0 1rem;
+}
+
+/* Tooltip on hover for truncated text */
+ul.experience-list li .date.truncate:hover {
+	overflow: visible;
+	white-space: normal;
+	height: auto;
+	line-height: 1.4;
+	padding: 0.5rem 1rem;
+	z-index: 10;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* date */
