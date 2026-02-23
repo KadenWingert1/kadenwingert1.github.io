@@ -3416,7 +3416,9 @@ ul.special li i {
 	font-size: 4em;
 	color: #000;
 }
-
+.project-title + h3 {
+	color: #6f6f6f;
+}
 .project-description {
 	color: #000;
 }

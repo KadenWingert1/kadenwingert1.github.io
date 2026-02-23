@@ -97,8 +97,27 @@ document.addEventListener("DOMContentLoaded", function () {
     var baseURL = "../images/projects/";
 
     var currentPage = window.location.pathname;
-
-    if (currentPage.includes("sportsphere")) {
+    if (currentPage.includes("truStar")) {
+      images = [
+        baseURL + "truStar/auth_screen.PNG",
+        baseURL + "truStar/create_account.PNG",
+        baseURL + "truStar/feed.PNG",
+        baseURL + "truStar/help.PNG",
+        baseURL + "truStar/view_contests.PNG",
+        baseURL + "truStar/select_contests.PNG",
+        baseURL + "truStar/contest_details.PNG",
+        baseURL + "truStar/confirm_purchase.PNG",
+        baseURL + "truStar/contests.PNG",
+        baseURL + "truStar/final_review.PNG",
+        baseURL + "truStar/leaderboard.PNG",
+        baseURL + "truStar/search_user.PNG",
+        baseURL + "truStar/view_profile.PNG",
+        baseURL + "truStar/all_messages.PNG",
+        baseURL + "truStar/message.PNG",
+        baseURL + "truStar/user_profile.PNG",
+        baseURL + "truStar/edit_profile.PNG",
+      ];
+    } else if (currentPage.includes("sportsphere")) {
       images = [
         baseURL + "sportsphere/login-screen.png",
         baseURL + "sportsphere/signup.png",
