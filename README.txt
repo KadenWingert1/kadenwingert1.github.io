@@ -1,5 +1,29 @@
-Hello, and thank you for visiting my personal portfolio! My name is Kaden Wingert, a passionate software engineering student at Iowa State University. This portfolio, is intended to display a collection of my work, experiences, and projects.
+Kaden Wingert Portfolio
 
-I'm always open to new opportunities, collaborations, and conversations. If you have a project in mind, want to learn more about my work, or just want to say hello, feel free to reach out. I look forward to connecting with you!
+This is a React + Vite version of my personal portfolio. It highlights my work,
+experience, and projects, with a minimalist, responsive layout.
 
- - Kaden Wingert
+Development Setup
+
+1. Install Node.js 18+ (Vite requires Node 18 or newer).
+2. From the project root, install dependencies:
+   npm install
+3. Start the dev server:
+   npm run dev
+4. Open the local URL printed by Vite.
+
+Production Build
+
+npm run build
+npm run preview
+
+Notes
+
+- Static project case studies live in public/Projects.
+- Legacy assets (CSS/JS for those project pages) remain in public/assets.
+
+Contact
+
+I'm always open to new opportunities and collaborations.
+
+- Kaden Wingert
