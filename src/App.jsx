@@ -49,6 +49,10 @@ export default function App() {
       elements.forEach((element) => element.classList.add("is-visible"));
       return;
     }
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      elements.forEach((element) => element.classList.add("is-visible"));
+      return;
+    }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
