@@ -96,10 +96,8 @@ export default function App() {
             <div className="hero-text">
               <h1>Software Engineer</h1>
               <p className="lede">
-                I'm Kaden Wingert, a software engineer focused on full-stack
-                product development and cloud infrastructure. I build reliable
-                experiences end to end, pairing clean interfaces with scalable
-                backend services and pragmatic cloud architecture.
+                Full-stack and cloud-focused engineer who enjoys continuous
+                learning and building modern, reliable software.
               </p>
               <div className="hero-actions">
                 <a
@@ -132,13 +130,11 @@ export default function App() {
             <div className="about-card">
               <img src="/images/kaden/kaden_fishing.jpg" alt="Kaden fishing" />
               <div className="about-card-body">
-                <h3>Hello! I'm Kaden Wingert.</h3>
+                <h3>Kaden Wingert</h3>
                 <p>
-                  I’m a Software Engineer from Le Mars, Iowa, which happens to
-                  be the Ice Cream Capital of the World 🍦. I’m passionate about
-                  the intersection of technology and purpose, focusing my energy
-                  on building robust software that makes a tangible difference
-                  in people's lives.
+                  I'm a software engineer from Le Mars, Iowa (the Ice Cream Capital of the World) 🍦
+                  and currently living in Cedar Rapids. I enjoy continuously learning in the constantly
+                  evolving field of technology while building impactful software solutions.
                 </p>
               </div>
             </div>
@@ -209,28 +205,33 @@ export default function App() {
         </section>
 
         <section className="section" data-reveal data-section="about">
-          <div className="section-header">
-            <h2>Hobbies</h2>
-          </div>
-          <div className="hobby-grid">
-            {hobbies.map((hobby) => (
-              <span key={hobby} className="tag">
-                {hobby}
-              </span>
-            ))}
-          </div>
-        </section>
-
-        <section className="section" data-reveal data-section="about">
-          <div className="section-header">
-            <h2>Skills</h2>
-          </div>
-          <div className="skills-grid">
-            {skills.map((skill) => (
-              <div key={skill} className="skill-tile">
-                <i className={`${skill} colored`} />
+          <div className="card-stack">
+            <div className="stack-card">
+              <div className="stack-card-header">
+                <h2>Hobbies</h2>
+                <p>Outside of work, I keep myself busy with exercising, reading, and my MBA classes</p>
               </div>
-            ))}
+              <div className="hobby-grid">
+                {hobbies.map((hobby) => (
+                  <span key={hobby} className="tag">
+                    {hobby}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="stack-card">
+              <div className="stack-card-header">
+                <h2>Skills</h2>
+                <p>Tools and platforms I'm experienced with</p>
+              </div>
+              <div className="skills-grid">
+                {skills.map((skill) => (
+                  <div key={skill} className="skill-tile">
+                    <i className={`${skill} colored`} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
